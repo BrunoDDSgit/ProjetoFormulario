@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.redes {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    right: 0px;
+    top: 0;
+    gap: clamp(24px, 3vw, 40px);
+    margin: clamp(16px, 3vw, 32px);
+}
+
+.redes svg {
+    height: clamp(32px, 5vw, 50px); 
+    transition: transform 1.5s ease;
+}
+
+html {
+    position: relative;
+    background-image: url(../img/giovanni-pedroni-1-cenario-eldoria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(248, 255, 240, 0.205);
+}
+
+.inicio {
+        position: absolute;
+        top: clamp(0%, 15vw, 10%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 2;
+        transition: transform ease 1.5s;
+}
+
+.inicio.desativo {
+    transform: translateY(-100vh);
+}
+
+.inicio h1 {
+        color: rgb(255, 255, 255);
+        font-size: clamp(35px,6vw, 80px);
+        text-align: center;
+        margin: 0px 60px;
+        transition: all 300ms ease;
+        display: flex;
+        justify-content: center;
+}
+
+.inicio h1 {
+    position: relative;
+}
+
+.inicio p {
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-size: clamp(16px, 2.5vw, 24px);
+        margin-top: clamp(8px, 3vw, 24px);
+}
+
+.inicio p span{
+        font-weight: 500;
+}
+
+.inicio .botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(10px, 7vw, 100px);
+    margin-top: clamp(20px, 3.5vw, 150px);
+    height: fit-content;
+    width: 80%;
+}
+
+.inicio .botoes button {
+    display: flex;
+    justify-content: center;
+    width: clamp(128px, 20vw, 250px);
+    height: 100%;
+    border: none;
+    padding: clamp(2px, 1.5vw, 24px) 0px;
+    border-radius: clamp(5px, 1.5vw, 15px);
+    font-weight: 700;
+    font-size: clamp(14px, 2vw, 24px);
+    transition: transform ease 500ms;
+    background-color: #fdfdfd00;
+    color: white;
+    align-items: center;
+    position: relative;
+}
+
+footer {
+        color: white;
+        font-size: clamp(12px, 2.25vw, 16px);
+        align-content: center;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        justify-content: center;
+}
+
+.icone {
+    animation: liquido infinite 2s ease-in-out;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    margin: clamp(40px, 1vw, 180px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.icone svg {
+    height: clamp(40px,20vw,180px);
+}
+
+.inicio .botoes button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.b1 {
+    content: '';
+    background-color: white;
+    width: 6%;
+    height: clamp(1.5px, 0.8vw, 3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 700ms;
+}
+
+.b1::after {
+    content: '';
+    background-color: white;
+    width: clamp(1.5px, 0.8vw, 3px);
+    height: clamp(7px, 1vw, 15px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 700ms;
+}
+
+.b2 {
+    content: '';
+    background-color: white;
+    width: 6%;
+    height: clamp(1.5px, 0.8vw, 3px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all ease 700ms;
+}
+
+.b2::after {
+    content: '';
+    background-color: white;
+    width: clamp(1.5px, 0.8vw, 3px);
+    height: clamp(7px, 1vw, 15px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all ease 700ms;
+}
+
+.b3 {
+    content: '';
+    background-color: white;
+    width: 6%;
+    height: clamp(1.5px, 0.8vw, 3px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all ease 700ms;
+}
+
+.b3::after {
+    content: '';
+    background-color: white;
+    width: clamp(1.5px, 0.8vw, 3px);
+    height: clamp(7px, 1vw, 15px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all ease 700ms;
+}
+
+.b4 {
+    content: '';
+    background-color: white;
+    width: 6%;
+    height: clamp(1.5px, 0.8vw, 3px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all ease 700ms;
+}
+
+.b4::after {
+    content: '';
+    background-color: white;
+    width: clamp(1.5px, 0.8vw, 3px);
+    height: clamp(7px, 1vw, 15px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all ease 700ms;
+}
+
+.inicio button span {
+    position: relative;
+    width: 100%;
+    padding: clamp(2px, 1.5vw, 24px) 0px;
+    overflow: hidden;
+}
+
+.inicio button span:hover .b1 {
+    width: 50%;
+}
+.inicio button span:hover .b2 {
+    width: 50%;
+}
+.inicio button span:hover .b3 {
+    width: 50%;
+}
+.inicio button span:hover .b4 {
+    width: 50%;
+}
+.inicio button span:hover .b1::after {
+    height: 4em;
+}
+.inicio button span:hover .b2::after {
+    height: 4em;
+}
+.inicio button span:hover .b3::after {
+    height: 4em;
+}
+.inicio button span:hover .b4::after {
+    height: 4em;
+}
+
+.redes svg:hover {
+    transform: rotateZ(360deg);
+}
+
+.inicio h1:after {
+    transition: all ease 700ms;
+    content:'';
+    position: absolute;      
+    width: 0px; 
+    height: clamp(2px, 0.4vw ,4px);
+    background-color: white;
+    border-radius: 10px;
+    bottom: -5px;
+}
+
+.inicio h1:hover:after {
+    content:'';
+    position: absolute;      
+    width: 100%; 
+    height: clamp(2px, 0.4vw ,4px);
+    background-color: white;
+}
+
+.janela-formulario {
+    position: absolute;
+    border: clamp(2px, 0.5vw, 4px) white solid;
+    border-radius: clamp(5px, 1.5vw, 10px);
+    height: clamp(40px ,70vh, 1200px);
+    width: clamp(20px, 80vw, 900px);
+    justify-self: center;
+    transform: translateY(-40px);
+    padding: clamp(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100vh);
+    transition: ease transform 1.5s;
+}
+
+.janela-formulario.ativo {
+    transform: translateY(-35vh);
+}
+
+.janela-formulario form {
+    width: 100%;
+    height: 100%;
+}
+
+.janela-formulario form .superior {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.janela-formulario form .superior span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    margin: 0px 16px;
+}
+
+.janela-formulario form .superior span p {
+    display: none;
+}
+
+.superior span svg {
+    height: clamp(40px, 5vw, 50px);
+    width: clamp(40px, 5vw, 50px);
+}
+
+
+.superior .fechar {
+    transition: ease 300ms transform;  
+}
+
+.superior .fechar:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+@media (min-width: 0px) and (max-width: 759px){
+    .inicio{
+        top: 20%;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1200px){
+    .inicio{
+        top: 10%;
+    }
+}
+
+@keyframes liquido {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: clamp(10px, 1vw, 30px);
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/* arrumar afters dos lados dos botões
